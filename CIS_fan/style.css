@@ -27,3 +27,28 @@ body{
 	text-shadow: 2px 2px 4px #000000;
 	font-weight:bold;
 }
+
+.menu{
+	display:block;
+	position:absolute;
+	top:150;
+	left:100;
+	width:15%;
+	padding:20px;
+	bottom:80;
+	background-color:white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lien{
+	color:#F32D2D;
+	text-decoration:none;
+	font-size:20px;
+	font-weight:bold;
+	display:block;
+	margin-bottom:10px;
+}
+
+.lien:hover{
+	text-shadow: 2px 2px 4px #000000;
+}

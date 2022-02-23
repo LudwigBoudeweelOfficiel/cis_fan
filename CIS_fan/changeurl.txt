@@ -1,0 +1,4 @@
+<script>
+        var name = "Ludwig2310";
+        window.history.pushState('indew', 'New Page Title', '/@'+name);
+    </script>

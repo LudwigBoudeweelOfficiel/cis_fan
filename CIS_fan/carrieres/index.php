@@ -17,13 +17,13 @@ $liens = $bdd->query('SELECT * FROM liens');
 <html>
 	<head>
 		<title>CIS Fan</title>
-		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="../style.css"/>
 		<meta charset="UTF-8"/>
 	</head>
 	
 	<body>
 		<!-- menu -->
-		<?php include('includes/header.php');?>
+		<?php include('../includes/header.php');?>
 		
 		<!-- Dernières interventions -->
 		<section class="menu">
