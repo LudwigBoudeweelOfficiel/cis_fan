@@ -13,6 +13,7 @@ catch(Exception $e)
 
 
 $liens = $bdd->query('SELECT * FROM liens');
+$interventions = $bdd->query('SELECT * FROM interventions ORDER BY Date DESC LIMIT 3');
 ?>
 <html>
 	<head>
@@ -25,7 +26,7 @@ $liens = $bdd->query('SELECT * FROM liens');
 		<!-- menu -->
 		<?php include('includes/header.php');?>
 		
-		<!-- Dernières interventions -->
+		<!-- Menu -->
 		<section class="menu">
 			<?php
 			while($dliens = $liens->fetch()){
@@ -34,6 +35,25 @@ $liens = $bdd->query('SELECT * FROM liens');
 			<?php
 			}
 			?>
+		</section>
+		
+		<!-- bloc central -->
+		<section class="body">
+			<h2 class="title">Dernières interventions</h2>
+			<?php
+			while($dinterventions = $interventions->fetch()){
+			?>
+				<section class="interventions">
+					<img src=""/>
+					<h3><?php echo $dinterventions['Titre']?></h3>
+				</section>
+			<?php
+			}
+			?>
+			
+			<p class="clear"></p>
+			
+			<h2 class="title">Actualité</h2>
 		</section>
 	</body>
 </html>
